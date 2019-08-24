@@ -18,21 +18,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bU8-ns-qlo">
-                                <rect key="frame" x="184" y="394" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre del Pais" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUa-er-Dn8">
+                                <rect key="frame" x="37" y="151" width="340" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de Hamurguesa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wfr-oX-dJA">
+                                <rect key="frame" x="114" y="244" width="187" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bU8-ns-qlo">
+                                <rect key="frame" x="102" y="385" width="210" height="30"/>
+                                <state key="normal" title="Quiero una hamburguesa!"/>
                                 <connections>
                                     <action selector="btnActualizar" destination="BYZ-38-t0r" eventType="touchUpInside" id="AHY-qt-wZB"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bU8-ns-qlo" secondAttribute="trailing" constant="102" id="2bh-lB-lrY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wfr-oX-dJA" secondAttribute="bottom" constant="597" id="6nr-oS-VIp"/>
+                            <constraint firstItem="Wfr-oX-dJA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="7Lp-NK-xRi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZUa-er-Dn8" secondAttribute="trailing" constant="37" id="9PU-xw-D0N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wfr-oX-dJA" secondAttribute="trailing" constant="113" id="B8S-50-NGF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bU8-ns-qlo" secondAttribute="bottom" constant="447" id="LZn-4Y-yAX"/>
+                            <constraint firstItem="ZUa-er-Dn8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="QSL-x7-iWu"/>
+                            <constraint firstItem="ZUa-er-Dn8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="107" id="Ywi-E0-ULX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZUa-er-Dn8" secondAttribute="bottom" constant="690" id="dE1-BV-HVG"/>
+                            <constraint firstItem="bU8-ns-qlo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="341" id="iEd-k6-u4D"/>
+                            <constraint firstItem="bU8-ns-qlo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="102" id="ilv-LW-ayH"/>
+                            <constraint firstItem="Wfr-oX-dJA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="xXh-xh-pq2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="labelHamburguesa" destination="Wfr-oX-dJA" id="w4U-Ov-1Df"/>
+                        <outlet property="labelPais" destination="ZUa-er-Dn8" id="S7j-qa-Ljn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="18.75"/>
         </scene>
     </scenes>
 </document>
